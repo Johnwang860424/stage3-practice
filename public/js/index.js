@@ -16,8 +16,18 @@ window.addEventListener("load", () => {
       const newImg = document.createElement("img");
       newH5.textContent = i.message;
       newImg.src = i.URL;
-      newImg.width = 500;
-      newDiv.classList.add("mt-3", "py-3", "container", "border");
+      newImg.width = 300;
+      newImg.classList.add("img-thumbnail", "mx-auto");
+      newDiv.classList.add(
+        "mt-3",
+        "py-3",
+        "container",
+        "border",
+        "d-flex",
+        "flex-column",
+        "justify-content-center",
+        "align-items-center"
+      );
       newDiv.append(newH5, newImg);
       document.body.append(newDiv);
     }
